@@ -217,6 +217,7 @@ button:hover {
   color: #2e2f42;
   text-align: center;
   min-height: 40px;
+  min-width: 150px;
 }
 
 #controls button {
