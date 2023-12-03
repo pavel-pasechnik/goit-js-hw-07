@@ -196,6 +196,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 32px;
   align-items: center;
   gap: 16px;
@@ -252,9 +253,9 @@ button:hover {
 #boxes {
   display: flex;
   justify-content: flex-start;
-  width: auto;
   padding: 32px;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 16px;
   border-radius: 8px;

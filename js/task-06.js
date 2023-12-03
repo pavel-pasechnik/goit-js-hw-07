@@ -21,22 +21,23 @@ const createBox = (amount) => {
 
 input.addEventListener("input", createBox);
 
-const createBtn = (event) => {
+const createBoxes = (event) => {
   event.preventDefault();
-
+  boxes.innerHTML = "";
   const quantity = input.value;
   const quantityNumber = parseInt(quantity, 10);
 
-  if (quantityNumber > 0) {
+  if (quantityNumber > 0 && quantityNumber <= 100) {
     createBox(quantityNumber);
+    input.value = "";
   }
 };
 
-const destroyBtn = (event) => {
+const destroyBoxes = (event) => {
   event.preventDefault();
 
   boxes.innerHTML = "";
 };
 
-btns[0].addEventListener("click", createBtn);
-btns[1].addEventListener("click", destroyBtn);
+btns[0].addEventListener("click", createBoxes);
+btns[1].addEventListener("click", destroyBoxes);
